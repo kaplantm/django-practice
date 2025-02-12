@@ -24,3 +24,9 @@ python manage.py runserver # runs on port 8000 by default
 Apps should be module, we might have different parts of a larger project broken into apps. Today we're going to create an app for posts but you could also have an app for users or tasks or shopping cart, anything you might break out into separate features. And they're modular - you might be able to take an an app from one Django project and put in in another. You've breaking out the logic into apps that can work independently.
 
 python manage.py startapp posts
+
+# Lesson 4
+Migrations are based on model definitions
+
+To run migrations:
+python manage.py makemigrations 
