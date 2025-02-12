@@ -25,8 +25,33 @@ Apps should be module, we might have different parts of a larger project broken 
 
 python manage.py startapp posts
 
-# Lesson 4
+# Lesson 3
 Migrations are based on model definitions
 
-To run migrations:
+To make migrations based on models:
 python manage.py makemigrations 
+
+To run migrations:
+python manage.py migrate
+
+# Lesson 4
+Interactive Django console:
+python manage.py shell
+
+List posts using Django ORM:
+from posts.models import Post
+p = Post()
+p.title = "My First Post!"
+p.save()
+Post.objects.all()
+
+
+## DB in the console
+sqlite3 /Users/tonikaplan/Repos/python/django-tutorial/myproject/db.sqlite3
+.tables
+.schema posts_post
+SELECT * FROM posts_post;
+
+# Lesson 5
+Admin tools
+python manage.py createsuperuser
