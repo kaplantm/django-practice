@@ -55,3 +55,6 @@ SELECT * FROM posts_post;
 # Lesson 5
 Admin tools
 python manage.py createsuperuser
+
+# Lesson 12
+python manage.py collectstatic
